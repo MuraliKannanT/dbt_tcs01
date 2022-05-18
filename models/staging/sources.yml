@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: src
+    database: sourcedb
+    schema: mk_mall
+    tables:
+      - name: customers
+      - name: regions
+      - name: nations
+      - name: lineitems
+      - name: suppliers
+      - name: parts
+      - name: partsupps
+      - name: orders
+        loaded_at_field: o_orderdate 
+        freshness:
+          warn_after: {count: 3, period: day}
+          

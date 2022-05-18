@@ -1,0 +1,47 @@
+
+# Descriptions for stg_line_items ####
+
+{% docs order_item_id %} surrogate key for the model -- combo of order_id + line_number {% enddocs %}
+
+{% docs line_number %} sequence of the order items within the order {% enddocs %}
+
+{% docs return_flag %} letter determining the status of the return {% enddocs %}
+
+{% docs ship_date %} the date the order item is being shipped {% enddocs %}
+
+{% docs commit_date %} the date the order item is being commited {% enddocs %}
+
+{% docs receipt_date %} the receipt date of the order item {% enddocs %}
+
+{% docs ship_mode %} method of shipping {% enddocs %}
+
+{% docs comment %} additional commentary {% enddocs %}
+
+{% docs extended_price %} line item price {% enddocs %}
+
+{% docs discount_percentage %} percentage of the discount {% enddocs %}
+
+
+# Descriptions for stg_supppliers
+
+{% docs supplier_name %} id of the supplier {% enddocs %}
+
+{% docs supplier_address %} address of the supplier {% enddocs %}
+
+{% docs phone_number %} phone number of the supplier {% enddocs %}
+
+{% docs account_balance %} raw account balance {% enddocs %}
+
+
+# Descriptions for stg_parts
+
+{% docs retail_price %} raw retail price {% enddocs %}
+
+
+# Descriptions for stg_part_suppliers
+
+{% docs available_quantity %} raw available quantity {% enddocs %}
+
+{% docs cost %} raw cost {% enddocs %}
+
+{% docs primarykey %} Primary Key for this table {% enddocs %}

@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_nations
+    columns:
+      - name: nation_id
+        tests:
+          - unique
+          - not_null
+      - name: region_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_regions')
+              field: region_id
+              config:
+                store_failures: true
+  - name: stg_regions
+    columns:
+      - name: region_id
+        description: '{{ doc("primarykey") }}'
+        tests:
+          - unique
+          - not_null
+      - name: name
+        tests:   
+          - accepted_values:
+              values: ['ASIA','AFRICA','AMERICA','EUROPE','MIDDLE EAST']
+              config:
+                store_failures: true
+  - name: stg_orders
+    columns:
+      - name: order_id
+        description: '{{ doc("primarykey") }}'
+        tests:
+          - unique
+          - not_null
+  - name: stg_customers
+    description: Staging table for Customers information
+    columns:
+      - name: customer_id
+        description: '{{ doc("primarykey") }}'
