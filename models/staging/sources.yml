@@ -5,6 +5,7 @@ sources:
     database: sourcedb
     schema: mk_mall
     tables:
+      - name: employees
       - name: customers
       - name: regions
       - name: nations
