@@ -15,7 +15,7 @@
         updated_time
 
     from {{ source('src', 'suppliers') }} supps 
-    left join {{ ref('supplier_names') }} names 
+    left join analytics.dbt_sachin.supplier_names names 
     on supps.s_suppkey=names.skey
 
 
