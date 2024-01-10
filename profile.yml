@@ -1,4 +1,4 @@
-prj01:
+default:
   outputs:
     dev:
       account: fqb16614
