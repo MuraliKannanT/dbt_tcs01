@@ -1,7 +1,7 @@
 name: Deploy dbt
 on:
  schedule:
-    - cron: 0/5 * * * *
+    - cron: 0/6 * * * *
 env:
   DB_HOST: fqb16614
   DB_USER: sachin
