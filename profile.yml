@@ -1,0 +1,15 @@
+prj01:
+  outputs:
+    dev:
+      account: fqb16614
+      database: analytics
+      password: Sachin@10
+      role: analyticsengineer
+      schema: dbt_murali
+      threads: 3
+      type: snowflake
+      user: sachin
+      warehouse: transform_wh
+      client_session_keep_alive: False
+      query_tag: github_action_query
+  target: dev
